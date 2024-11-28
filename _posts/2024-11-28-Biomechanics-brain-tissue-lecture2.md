@@ -39,7 +39,7 @@ tags: [Biomechanics],[Brain tissue]
    - alginate-based hydrogels 海藻酸盐基水凝胶
      - alginate：typically extracted from the cell walls of brown algae褐藻细胞壁
      - great potential to form stable hydrogels with modulated 调节的 mechanical properties
-![Hydrogels](Hydrogels.PNG)
+
 
 ## Modeling time-independent properties
 1. Time-indepedent effects
@@ -53,9 +53,7 @@ tags: [Biomechanics],[Brain tissue]
      - BG - basal ganglia
      - C- cortex
      - CR - corona radiata
-![CR and C compression and tension plot](image/2024-11-28-16-15-05.png)
-![region-dependency](image/2024-11-28-16-19-03.png)
-![region of brain](image/2024-11-28-16-23-51.png)
+
    - cortex
    - thalamus
    - basal ganglia基底神经节
@@ -66,7 +64,7 @@ tags: [Biomechanics],[Brain tissue]
    - cerebellar white matter 小脑白质
    - deep cerebellar nuclei 小脑深核
 
-1. Deformation and stress
+2. Deformation and stress
    - deformation gradient
      - two point tensor
      - one leg in material/reference configuration, one leg in deformed spatial configuration
@@ -82,15 +80,13 @@ tags: [Biomechanics],[Brain tissue]
        - modified one-term Ogden
        - shear modulus
        - nonlinearity parameter
-     - ![equation of modified one-term Ogden](image/2024-11-28-16-46-12.png)
      - neo-Hooke
      - Mooney-Revlin
      - Demiray
      - Gent
-![nonlinear continuum mechanics](image/2024-11-28-16-30-39.png)
-![different methods](image/2024-11-28-16-40-56.png)
 
-1. finite hyperelasticity
+
+3. finite hyperelasticity
    - material respense independent of load history - loading and unloading follow the same path
    - rheological model 流变模型: spring
    - strain energy density
@@ -98,12 +94,12 @@ tags: [Biomechanics],[Brain tissue]
      - energy stored elastically within a unit volume of the body
      - strain energy only depends on elastic deformation
    - stress follows as derivative with respect to the deformation gradient. (stress is the derivative of strain energy or free energy with respect to the deformation gradient.)
-![relation between piola stress and free energy](image/2024-11-28-16-36-29.png)
 
-1. multiple loading modes 
+
+4. multiple loading modes 
    - important to consider multiple loading modes simultaneously 同时
    - parameter identification 参数辨识
-2. Deformation and stress for uniaxial compression/tension
+5. Deformation and stress for uniaxial compression/tension
    - assumptions:
      - incompressible material
      - homogeneous deformation
@@ -113,16 +109,16 @@ tags: [Biomechanics],[Brain tissue]
      - >1 - tension
    - deformation gradient with eigenvalues
    - piola stress
-![uniaxial compression and tension](image/2024-11-28-16-50-49.png)
-1. Modeling region-dependent properties
+
+6. Modeling region-dependent properties
    - option 1: region-dependent model parameters
      - different regions with different parameters (e.g. shear modulus or nonlinearity parameters in modified one-term Ogden)
    - option 2: include microstructural information
-![region dependent modeling](image/2024-11-28-16-55-07.png)
+
   - modeling regional hyperelastic properties
   - introduce material parameters (shear modulus or nonlinearity parameters in Ogden) as a function of the cell density c
   - a single set of parameters valid for all brain regions
-![modeling different region with cell density set function](image/2024-11-28-17-01-17.png)
+
 
 ## Modeling time-dependent properties
 
@@ -130,7 +126,7 @@ tags: [Biomechanics],[Brain tissue]
    - hysteresis 滞后
    - recoverable conditioning 
      - viscoelastic effect and no damage
-     - ![time dependent stress](image/2024-11-28-17-05-09.png)
+
    - stress relaxation
 2. Viscoelasticity
    - Material response depends on loading rate and loading history
@@ -140,16 +136,14 @@ tags: [Biomechanics],[Brain tissue]
    - in the linear elastic limit
      - Hooke's Spring (with Young's Modulus)
      - Newton's damper
-     - ![Hooke und Newton](image/2024-11-28-17-32-24.png)
-     - ![3 compression](image/2024-11-28-17-32-58.png)
+
 3. finite viscoelasticity
    - multiplicative split of deformation gradient (F的乘法分割)
    - additive split of strain energy function (应变能的加法分割)
    - eq: cell-density-dependent strain energy
    - microstructure-informed viscosity or relaxation time
    - neq: hyperelastic strain energy
-   - ![strain energy](image/2024-11-28-17-36-10.png)
-   - ![brain model](image/2024-11-28-17-40-25.png)
+
    - during stress relaxation, cells keep moving in the same direction as during loading
    - cell displacement curves: during stress relaxation experiments to determine one of the relaxation time constants
    - time constant: corresponding time constant represents the viscoelasticity of the network of cells and extracellular matrix
@@ -171,8 +165,7 @@ tags: [Biomechanics],[Brain tissue]
      - compression
      - tension
      - torsional shear
-     - ![material response](image/2024-11-28-17-55-49.png)
-     - ![material response 2- reference: literature2](image/2024-11-28-17-58-16.png)
+
 2. applications: brain development
    - link cellular processes 连接细胞过程 during brain development with cortical folding
    - hypothesis: mechanical instabilities induced by a difference in growth and stiffness between cortex and inner zones (subcortex) drive cortical folding
@@ -182,7 +175,7 @@ tags: [Biomechanics],[Brain tissue]
    - final goal: assist diagnosis and treatment of epilepsy 癫痫 through inverse engineering and computational disease modeling
    - How is cortical folding affected by brain size?
    - comparison of different mammalian brains: influence of brain volume
-   - ![brain size of mammalians](image/2024-11-28-18-22-08.png)
+
    - notes on material model choice
      - fluid has time to escape and does not contribute to tissue stiffness -> hyperelasticity, conditioned response (==what is the condioned response and unconditioned response?==)(loading=unloading)
      - extremely large deformations -> caution with material nonlinearity
@@ -205,7 +198,7 @@ tags: [Biomechanics],[Brain tissue]
      - homogeneous properties in same region
      - regional properties are different
      - considered brain regions
-     - ![regional properties](image/2024-11-28-18-41-30.png)
+
    - notes on material model choice
      - large deformations imposed on brain tissue at intermediate time scales
      - finite (poro-)viscoelasticity
