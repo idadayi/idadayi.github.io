@@ -1,5 +1,5 @@
 ---
-title: "Reading report and notes of brain tissue"
+title: "Modeling and stimulation of brain tissues"
 date: 2024-11-28
 categories: [Study]
 tags: [Biomechanics],[Brain tissue]
@@ -17,6 +17,8 @@ tags: [Biomechanics],[Brain tissue]
 6. [Size and curvature regulate pattern selection in the mammalian brain](https://www.sciencedirect.com/science/article/pii/S2352431615000863)
 7. [Bulging brains](https://pmc.ncbi.nlm.nih.gov/articles/PMC5687257/)
 8. [A comparison of brain retration mechanisms using finite element analysis and the effects of regionally heterogeneous material properties](https://link.springer.com/article/10.1007/s10237-023-01806-2)
+
+
 
 ## Ultrasoft materials
 1. stiffness of different tissues
@@ -40,6 +42,8 @@ tags: [Biomechanics],[Brain tissue]
      - alginate：typically extracted from the cell walls of brown algae褐藻细胞壁
      - great potential to form stable hydrogels with modulated 调节的 mechanical properties
 
+
+![水凝胶](https://cdn.jsdelivr.net/gh/idadayi/Blogimage@main/Markdown20241204145341.png)
 
 ## Modeling time-independent properties
 1. Time-indepedent effects
