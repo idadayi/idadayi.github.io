@@ -2,7 +2,7 @@
 title: "Modeling and stimulation of brain tissues"
 date: 2024-11-28
 categories: [Study]
-tags: [Biomechanics],[Brain tissue]
+tags: [Biomechanics, Brain tissue]
 ---
 
 
